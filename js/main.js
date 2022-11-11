@@ -22,7 +22,7 @@
         menu.classList.remove('header__nav_active');
     });
     if (window.innerWidth <= 767){
-        for (let i=0; i< menuLinks.length; i += 1) {
+        for (let i = 0; i < menuLinks.length; i += 1) {
             menuLinks[i].addEventListener('click', () => {
                 menu.classList.remove('header__nav_active')
             });
@@ -61,7 +61,7 @@
     const scrollTo = function () {
         const links = document.querySelectorAll('.js-scroll');
         links.forEach(each => {
-            each.addEventListener('click', function () {
+            each.addEventListener('click', function (){
                 const currentTarget = this.getAttribute('href');
                 smoothScroll(currentTarget, 1000);
             });
