@@ -61,7 +61,7 @@
     const scrollTo = function () {
         const links = document.querySelectorAll('.js-scroll');
         links.forEach(each => {
-            each.addEventListener('click', function (){
+            each.addEventListener('click', function () {
                 const currentTarget = this.getAttribute('href');
                 smoothScroll(currentTarget, 1000);
             });
